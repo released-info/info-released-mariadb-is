@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--timestamp=1622301379-->
+<!--timestamp=1622301971-->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
   <link rel="stylesheet" href="./theme.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
-  <title>Is MariaDB 10.6 Released?</title>
+  <title>
+    Is MariaDB 10.6 Released?
+  </title>
   <link rel="icon" href="https://released.info/assets/img/technologies/mariadb/mariadb.ico" type="image/svg+xml">
   <meta name="description" content="Is MariaDB 10.6 Released?">
-  <meta name="keywords"  content="MariaDB, DB, database, sql">
+  <meta name="keywords" content="MariaDB, DB, database, sql">
   <meta name=”robots” content="index, follow">
 
   <!-- facebook -->
@@ -33,264 +36,293 @@
 
 <body>
 
-<input id="released-days" type="hidden" value="-1" />
+  <input id="released-days" type="hidden" value="-1" />
 
-<main role="main">
-  <section class="released-info">
-    <div class="container-lg">
-      <ul class="social-links">
-        <li>
-          <a class="share-linkedin" target="_blank">
-            <i class="bi bi-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a class="share-facebook" target="_blank">
-            <i class="bi bi-facebook"></i>
-          </a>
-        </li>
-        <li>
+  <main role="main">
+    <section class="released-info">
+      <div class="container-lg">
+        <ul class="social-links">
+          <li>
+            <a class="share-linkedin" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="share-facebook" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li>
             <a class="share-twitter" target="_blank">
               <i class="bi bi-twitter"></i>
             </a>
-        </li>
-      </ul>
-      <h2>Is MariaDB 10.6 Released?</h2>
-      <div class="row">
-        <div class="col-lg-8">
-          <div id="logo">
-            <img src="https://released.info/assets/img/technologies/mariadb/mariadb-logo.png" alt="MariaDB logo" />
-          </div>
-
-          <!-- CHOOSE ONE OF BELOW SECTIONS HERE -->
-
-          
-          
-          
-          <span>
-            <div class="white-box" id="no-information">
-              No information
+          </li>
+        </ul>
+        <h2>
+          Is MariaDB 10.6 Released?
+        </h2>
+        <div class="row">
+          <div class="col-lg-8">
+            <div id="logo">
+              <img src="https://released.info/assets/img/technologies/mariadb/mariadb-logo.png" alt="MariaDB logo" />
             </div>
-          </span>
 
-          <!-- END -->
+            <!-- CHOOSE ONE OF BELOW SECTIONS HERE -->
 
+            
+            
+            
+            <span>
+              <div class="white-box" id="no-information">
+                No information
+              </div>
+            </span>
+
+            <!-- END -->
+
+          </div>
+        </div>
+        <span>
+          <h3>
+            MariaDB 10.6 got status 'Alpha' on 26th April 2021
+          </h3>
+        </span>
+        <span>
+          <h4>
+            There is no information when it will be released.
+          </h4>
+        </span>
+
+        <div class="text-center">
+          <a class="share-twitter" target="_blank">
+            <i class="bi bi-twitter"></i>
+            Tweet this
+          </a>
         </div>
       </div>
-      <span>
-        <h3>MariaDB 10.6 got status 'Alpha' on 26th April 2021</h3>
-      </span>
-      <span>
-        <h4>There is no information when it will be released.</h4>
-      </span>
+    </section>
 
-      <div class="text-center">
-        <a class="share-twitter" target="_blank">
-          <i class="bi bi-twitter"></i>
-          Tweet this
-        </a>
-      </div>
-    </div>
-  </section>
+    <section class="features-section">
+      <div class="container-lg">
+        <h2>
+          Meet Maria 10.6
+        </h2>
+        <div class="row mb-5">
+          <div class="col-md-6">
 
-  <section class="features-section">
-    <div class="container-lg">
-      <h2>Meet Maria 10.6</h2>
-      <div class="row mb-5">
-        <div class="col-md-6">
+            <ul>
+              <li>
+                Atomic DDL
+              </li>
+            </ul>
 
-          <ul>
-            <li>Atomic DDL</li>
-          </ul>
+            <ul>
+              <li>
+                System versioning setting to allow history modification
+              </li>
+            </ul>
 
-          <ul>
-            <li>System versioning setting to allow history modification</li>
-          </ul>
+            <ul>
+              <li>
+                Refine the server binlog-based recovery for semisync
+              </li>
+            </ul>
 
-          <ul>
-            <li>Refine the server binlog-based recovery for semisync</li>
-          </ul>
-
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>
+                Engine transaction recovery through persistent binlog
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Avoid OOM by linux kernel co-operative memory management
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Implement a CHECKSUM redo log record for improved validation
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-6">
-          <ul>
-            <li>Engine transaction recovery through persistent binlog</li>
-          </ul>
-          <ul>
-            <li>Avoid OOM by linux kernel co-operative memory management</li>
-          </ul>
-          <ul>
-            <li>Implement a CHECKSUM redo log record for improved validation</li>
-          </ul>
+        <div class="text-center">
+          <a target="_blank" href="https://jira.mariadb.org/browse/MDEV-18976?jql=project%20%3D%20MDEV%20AND%20issuetype%20%3D%20Task%20AND%20fixVersion%20in%20(10.6)%20ORDER%20BY%20votes%20DESC%2C%20priority%20DESC" class="btn btn-primary btn-lg">Read more</a>
         </div>
       </div>
-      <div class="text-center">
-        <a target="_blank" href="https://jira.mariadb.org/browse/MDEV-18976?jql=project%20%3D%20MDEV%20AND%20issuetype%20%3D%20Task%20AND%20fixVersion%20in%20(10.6)%20ORDER%20BY%20votes%20DESC%2C%20priority%20DESC" class="btn btn-primary btn-lg">Read more</a>
+      <div class="logo-container">
+        <span>
+          <img src="https://released.info/assets/img/technologies/mariadb/mariadb-logo2.png" alt="MariaDB logo" />
+        </span>
       </div>
-    </div>
-    <div class="logo-container">
-      <span>
-        <img src="https://released.info/assets/img/technologies/mariadb/mariadb-logo2.png" alt="MariaDB logo" />
-      </span>
-    </div>
-  </section>
+    </section>
 
-  <section class="posts-section">
-    <div class="container-lg">
-      <h2>Read all about MariaDB</h2>
-      <div class="row">
+    <section class="posts-section">
+      <div class="container-lg">
+        <h2>
+          Read all about MariaDB
+        </h2>
+        <div class="row">
 
-        
-          <!-- repeat below container for each image: -->
-          <div class="col-md-4">
+          
+            <!-- repeat below container for each image: -->
+            <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
               <span role="img" aria-label="${post.imageAlt}"
-                    style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-Getting-Started-with-MariaDB.jpg&#39;);">
+                style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-Getting-Started-with-MariaDB.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Daniel-Bartholomew/dp/1785284126">
                   <span>
                     Getting Started with MariaDB
                   </span>
                 </a>
               </span>
-          </div>
-          <!-- repeat end -->
-        
-          <!-- repeat below container for each image: -->
-          <div class="col-md-4">
+            </div>
+            <!-- repeat end -->
+          
+            <!-- repeat below container for each image: -->
+            <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
               <span role="img" aria-label="${post.imageAlt}"
-                    style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-MariaDB-Crash-Course.jpg&#39;);">
+                style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-MariaDB-Crash-Course.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Ben-Forta/dp/0321799941">
                   <span>
                     MariaDB Crash Course
                   </span>
                 </a>
               </span>
-          </div>
-          <!-- repeat end -->
-        
-          <!-- repeat below container for each image: -->
-          <div class="col-md-4">
+            </div>
+            <!-- repeat end -->
+          
+            <!-- repeat below container for each image: -->
+            <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
               <span role="img" aria-label="${post.imageAlt}"
-                    style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-Learning-MySQL-and-MariaDB.jpg&#39;);">
+                style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-Learning-MySQL-and-MariaDB.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Russell-J-T-Dyer/dp/1449362907">
                   <span>
                     Learning MySQL and MariaDB
                   </span>
                 </a>
               </span>
-          </div>
-          <!-- repeat end -->
-        
-          <!-- repeat below container for each image: -->
-          <div class="col-md-4">
+            </div>
+            <!-- repeat end -->
+          
+            <!-- repeat below container for each image: -->
+            <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
               <span role="img" aria-label="${post.imageAlt}"
-                    style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-MariaDB-Essentials.jpg&#39;);">
+                style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-MariaDB-Essentials.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Emilien-Kenler/dp/1783982861">
                   <span>
                     MariaDB Essentials
                   </span>
                 </a>
               </span>
-          </div>
-          <!-- repeat end -->
-        
-          <!-- repeat below container for each image: -->
-          <div class="col-md-4">
+            </div>
+            <!-- repeat end -->
+          
+            <!-- repeat below container for each image: -->
+            <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
               <span role="img" aria-label="${post.imageAlt}"
-                    style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-Mastering-MariaDB.jpg&#39;);">
+                style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-Mastering-MariaDB.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Federico-Razzoli-ebook/dp/B00NW474Y6">
                   <span>
                     Mastering MariaDB
                   </span>
                 </a>
               </span>
-          </div>
-          <!-- repeat end -->
-        
-          <!-- repeat below container for each image: -->
-          <div class="col-md-4">
+            </div>
+            <!-- repeat end -->
+          
+            <!-- repeat below container for each image: -->
+            <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
               <span role="img" aria-label="${post.imageAlt}"
-                    style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-MariaDB-Cookbook.jpg&#39;);">
+                style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-MariaDB-Cookbook.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Daniel-Bartholomew-ebook/dp/B00J5KHL80">
                   <span>
                     MariaDB Cookbook
                   </span>
                 </a>
               </span>
-          </div>
-          <!-- repeat end -->
-        
+            </div>
+            <!-- repeat end -->
+          
 
-      </div>
-      <div class="news">
-        <div>Don't miss release information about MariaDB</div>
-        <div>Subscribe to the newsletter (no spam, promise):</div>
-        <div class="form">
-          <div id="input-container">
-            <input value="" id="subscribe-input" type="email" class="form-control" placeholder="Your email">
-            <button disabled id="subscribe-button" type="button" class="btn btn-warning">Submit</button>
-          </div>
-          <div id="subscription-success">
-            Thanks!
-          </div>
         </div>
       </div>
-    </div>
 
-  </section>
+    </section>
 
-  <section>
-  <div>
+    <section class="about-section">
+  <div class="container-lg">
     <h2>About</h2>
 
   </div>
 </section>
 
-</main>
+    <section class="newsletter-section">
+      <div class="container-lg">
+        <div class="news">
+          <div>
+            Don't miss release information about MariaDB
+          </div>
+          <div>Subscribe to the newsletter (no spam, promise):</div>
+          <div class="form">
+            <div id="input-container">
+              <input value="" id="subscribe-input" type="email" class="form-control" placeholder="Your email">
+              <button disabled id="subscribe-button" type="button" class="btn btn-warning">Submit</button>
+            </div>
+            <div id="subscription-success">
+              Thanks!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- paths should be set to assets in main domain folder -->
-<footer class="footer-dark">
-  <div class="container-lg">
-    <ul>
-      <li>
-        <a href="https://released.info/index.html">
-          <b>released.info</b>
-        </a>
-      </li>
-      <li>
-        <a href="https://released.info/terms.html">
-          Terms of use
-        </a>
-      </li>
-      <li>
-        <a href="https://released.info/mission.html">
-          Mission
-        </a>
-      </li>
-      <li>
-        <a href="https://released.info/privacy.html">
-          Privacy policy
-        </a>
-      </li>
-      <li>
-        <a href="https://released.info/contact.html">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
+  </main>
 
-<!-- paths should be set to assets in main domain folder -->
-<script src="https://released.info/assets/js/vendor/jquery-3.6.0.min.js"></script>
-<script src="https://released.info/assets/js/vendor/jquery.confetti.js"></script>
-<script src="https://released.info/assets/js/vendor/odometer.min.js"></script>
-<script src="https://released.info/assets/js/technology.js"></script>
+  <!-- paths should be set to assets in main domain folder -->
+  <footer class="footer-dark">
+    <div class="container-lg">
+      <ul>
+        <li>
+          <a href="https://released.info/index.html">
+            <b>released.info</b>
+          </a>
+        </li>
+        <li>
+          <a href="https://released.info/terms.html">
+            Terms of use
+          </a>
+        </li>
+        <li>
+          <a href="https://released.info/mission.html">
+            Mission
+          </a>
+        </li>
+        <li>
+          <a href="https://released.info/privacy.html">
+            Privacy policy
+          </a>
+        </li>
+        <li>
+          <a href="https://released.info/contact.html">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- paths should be set to assets in main domain folder -->
+  <script src="https://released.info/assets/js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="https://released.info/assets/js/vendor/jquery.confetti.js"></script>
+  <script src="https://released.info/assets/js/vendor/odometer.min.js"></script>
+  <script src="https://released.info/assets/js/technology.js"></script>
 </body>
 
 </html>
