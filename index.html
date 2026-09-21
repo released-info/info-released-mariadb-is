@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--timestamp=1757809450-->
+<!--timestamp=1790025384-->
 
 <head>
   <meta charset="UTF-8">
@@ -17,20 +17,20 @@
   <link rel="icon" href="https://released.info/assets/img/technologies/mariadb/mariadb.ico" type="image/svg+xml">
   <meta name="description" content="Is MariaDB 13 Released?">
   <meta name="keywords" content="MariaDB, DB, database, sql">
-  <meta name=”robots” content="index, follow">
+  <meta name="robots" content="index, follow">
 
   <!-- facebook -->
   <meta property="og:url" content="https://is.mariadb.released.info" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Is MariaDB 13 Released?" />
-  <meta property="og:description" content="MariaDB 13 will be released in 321 days! #released.info" />
+  <meta property="og:description" content="MariaDB 13 has been released! #released.info" />
   <meta property="og:image" content="https://released.info/assets/img/technologies/mariadb/mariadb-logo.png" />
 
   <!-- twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="ReleasedInfo" />
   <meta name="twitter:title" content="Is MariaDB 13 Released?" />
-  <meta name="twitter:description" content="MariaDB 13 will be released in 321 days! #released.info" />
+  <meta name="twitter:description" content="MariaDB 13 has been released! #released.info" />
   <meta name="twitter:image" content="https://released.info/assets/img/technologies/mariadb/mariadb-logo.png" />
 
   <meta name="url" content="https://is.mariadb.released.info" />
@@ -47,7 +47,7 @@
 
 <body>
 
-  <input id="released-days" type="hidden" value="321" />
+  <input id="released-days" type="hidden" value="0" />
 
   <main role="main">
     <a href="https://released.info/index.html" class="go-back"><i class="bi bi-arrow-left"></i></a>
@@ -78,19 +78,20 @@
           <div class="col-lg-8">
 
             <div id="logo">
-              <span role="img" aria-label="${configuration.logoAlt}"
+              <span role="img" aria-label="MariaDB logo"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/mariadb-logo.png&#39;);">
               </span>
             </div>
 
             <!-- CHOOSE ONE OF BELOW SECTIONS HERE -->
 
-            
             <span>
-              <div class="odometer-content" id="counter">
-                <div id="odometer"></div>
+              <div class="white-box" id="time-out">
+                It's Out!
               </div>
             </span>
+            
+            <!-- A counter that reached zero falls back to "Not Yet" instead of an empty box until the state is updated -->
             
             
 
@@ -101,10 +102,14 @@
         <div class="row">
           <div class="col-lg-8">
             <h3 id="highlightTextDescription1">
-              There is <span class="btn-primary">no clear information</span> about release of MariaDB 12
+              MariaDB 13.0 has been released on <span class="btn-primary">15th September 2026</span>
             </h3>
           </div>
-          
+          <div class="col-lg-8">
+            <h4 id="highlightTextDescription2">
+              MariaDB 13.1 is at <span class="btn-primary">release-candidate</span> stage (13.1.1 RC published on 15th September 2026), there is no announced GA date
+            </h4>
+          </div>
         </div>
         <div class="text-center">
           <a class="share-twitter" target="_blank">
@@ -118,20 +123,26 @@
     <section class="features-section">
       <div class="container-lg">
         <h2>
-          Meet Maria 13
+          Meet MariaDB 13
         </h2>
         <div class="row mb-5">
           <div class="col-md-5">
 
             <ul>
               <li>
-                Parallel Replication Enhancements
+                REF CURSOR support in stored programs
               </li>
             </ul>
 
             <ul>
               <li>
-                UUID Generation Functions
+                Atomic CREATE OR REPLACE TABLE
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                innodb_log_archive for point-in-time recovery
               </li>
             </ul>
 
@@ -139,22 +150,27 @@
           <div class="col-md-5">
             <ul>
               <li>
-                ROW Data Type
+                Optimizer trace shows the statistics used
               </li>
             </ul>
             <ul>
               <li>
-                New GIS Functions
+                Deprecation status of system variables in information schema
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Configurable timestamp format in the audit plugin
               </li>
             </ul>
           </div>
         </div>
         <div class="text-center">
-          <a target="_blank" href="https://mariadb.org/blog/" class="btn btn-primary btn-lg">Read more</a>
+          <a target="_blank" href="https://mariadb.com/docs/release-notes/community-server/13.0/13.0.2" class="btn btn-primary btn-lg">Read more</a>
         </div>
       </div>
       <div class="logo-container">
-        <span role="img" aria-label="${configuration.logoAlt2}"
+        <span role="img" aria-label="MariaDB logo"
           style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/mariadb-logo2.png&#39;);">
         </span>
       </div>
@@ -171,7 +187,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Getting Started with MariaDB"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-Getting-Started-with-MariaDB.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Daniel-Bartholomew/dp/1785284126?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=1868d51a5e89e3a1d38326b8250f9f27&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -185,7 +201,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: MariaDB Crash Course"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-MariaDB-Crash-Course.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Ben-Forta/dp/0321799941?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=c8822821ba63e297c11cfaed1ae6fd60&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -199,7 +215,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Learning MySQL and MariaDB"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-Learning-MySQL-and-MariaDB.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Russell-J-T-Dyer/dp/1449362907?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=33dd32c8e643cd7648ad04aa25b5d687&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -213,7 +229,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: MariaDB Essentials"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-MariaDB-Essentials.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Emilien-Kenler/dp/1783982861?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=7002c756da29a5d7fcc0afcdc350dc93&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -227,7 +243,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Mastering MariaDB"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-Mastering-MariaDB.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Federico-Razzoli-ebook/dp/B00NW474Y6?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=37f80db733af3697c961f367455b4f3e&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -241,7 +257,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: MariaDB Cookbook"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/mariadb/book-MariaDB-Cookbook.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Daniel-Bartholomew-ebook/dp/B00J5KHL80?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=5df2287650105299cbee404e1c98fa48&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -323,8 +339,7 @@
         are more academic, as well as business data analytic people who look to extract insights from large
         datasets.<br />
         <h3>Releases</h3>
-        Maria DB is currently on the 10.5 stable release, released in June of 2020. This version will cease
-        to be supported until 2025, with the 5-year pattern following for every year’s new release of MariaDB.
+        MariaDB 13.0 is the current stable rolling release (13.0.2, 15th September 2026) and MariaDB 12.3 is the latest long-term support release (GA since 28th May 2026, supported until June 2029); MariaDB now publishes quarterly rolling releases and a yearly LTS.
         This is, of course, a very active community of developers and users to make plausible yearly
         updates that add features and solve bugs in the manner that MariaDB does.
     </div>
